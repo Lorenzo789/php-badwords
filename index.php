@@ -54,5 +54,4 @@ $paragraph = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione greca è i
         </pre>
     </div>
 </body>
-
 </html>
