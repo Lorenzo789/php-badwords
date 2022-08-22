@@ -1,6 +1,6 @@
 <?php
 // Variabile
-$prohibitedWords = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione greca è il re di tutti gli dèi, il capo dell Olimpo, dio del tuono. I suoi simboli sono la folgore, il toro, l aquila, la quercia e l olivo.
+$paragraph = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione greca è il re di tutti gli dèi, il capo dell Olimpo, dio del tuono. I suoi simboli sono la folgore, il toro, l aquila, la quercia e l olivo.
 
     Figlio del titano Crono e di Rea, è il più giovane dei suoi fratelli e sorelle: Estia, Demetra, Era, Ade e Poseidone. Nella maggior parte delle leggende o miti é sposato con Era (protettrice del matrimonio e dei figli), anche se nel santuario dell oracolo di Dodona come sua consorte si venerava Dione (viene raccontato nell Iliade che Zeus sia il padre di Afrodite, avuta con Dione).
     
@@ -26,13 +26,13 @@ $prohibitedWords = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione grec
 
         <p>
             <?php
-                echo $prohibitedWords;
+                echo $paragraph;
             ?>
         </p>
 
         <pre>
             <?php
-                echo ' length ' . strlen($prohibitedWords) . ' words';
+                echo ' length ' . strlen($paragraph) . ' words';
             ?>
         </pre>
     </div>
@@ -41,7 +41,9 @@ $prohibitedWords = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione grec
 
         <p>
             <?php
-                echo str_replace('Zeus', '***', $prohibitedWords);
+                $prohibitedWords = str_replace('Zeus', '***', $paragraph);
+
+                echo $prohibitedWords;
             ?>
         </p>
 
