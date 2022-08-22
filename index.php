@@ -41,7 +41,7 @@ $paragraph = 'Zeus (in greco antico: Ζεύς, Zèus) nella religione greca è i
 
         <p>
             <?php
-                $prohibitedWords = str_replace('Zeus', '***', $paragraph);
+                $prohibitedWords = str_replace($_GET["name"], '***', $paragraph);
 
                 echo $prohibitedWords;
             ?>
